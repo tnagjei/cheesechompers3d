@@ -81,14 +81,36 @@
   <section id="play" class="w-full max-w-2xl mx-auto flex flex-col items-center px-4">
     <h2 class="text-2xl font-semibold text-gray-800 mb-3 mt-6">Play CheeseChompers3D Online</h2>
     <div class="w-full aspect-video rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white mb-6">
-      <iframe
-        src="https://html-classic.itch.zone/html/13474977/CheeseChompers3DWeb/index.html"
-        title="CheeseChompers3D Online Game"
-        class="w-full h-full min-h-[320px] bg-gray-50"
-        allowfullscreen
-        loading="lazy"
-        frameborder="0"
-      ></iframe>
+      <div class="w-full h-full flex flex-col items-center justify-center py-12">
+  <button id="play-btn"
+    class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow hover:bg-blue-700 text-lg transition flex items-center gap-2 text-lg"
+    style="min-width:220px;"
+  >
+    <svg class="animate-bounce" width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#2563eb"/><polygon points="10,8 16,12 10,16" fill="#fff"/></svg>
+    <span id="play-btn-text">Play Now</span>
+  </button>
+  <p class="mt-4 text-gray-500 text-sm">The game will open in a new tab. If nothing happens, please check your browser's popup blocker.</p>
+  <script>
+    const playBtn = document.getElementById('play-btn');
+    const playBtnText = document.getElementById('play-btn-text');
+    let isLoading = false;
+    playBtn.onclick = function() {
+      if (isLoading) return;
+      isLoading = true;
+      playBtnText.innerHTML = 'Opening...';
+      playBtn.classList.add('opacity-70', 'cursor-wait');
+      const newWin = window.open('https://cheesechompers3d.itch.io/cheese-chompers-3d', '_blank');
+      setTimeout(() => {
+        playBtnText.innerHTML = 'Play Now';
+        playBtn.classList.remove('opacity-70', 'cursor-wait');
+        isLoading = false;
+        if (!newWin || newWin.closed || typeof newWin.closed=="undefined") {
+          alert('Popup was blocked. Please allow popups or open the game page manually!');
+        }
+      }, 1000);
+    }
+  <\/script>
+</div>
     </div>
     <p class="text-gray-700 mb-4">
       CheeseChompers3D is a browser-based 3D arcade game where you control a hungry mouse on a quest for cheese. Navigate through vibrant mazes, avoid obstacles, and collect as much cheese as you can! With intuitive controls and engaging gameplay, CheeseChompers3D is perfect for players of all ages. Try CheeseChompers3D now and see why it’s the top choice for cheese lovers everywhere.
