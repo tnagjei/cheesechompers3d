@@ -4,11 +4,38 @@
   <meta charset="UTF-8">
   <title>Privacy Policy - CheeseChompers3D</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-gray-100 via-white to-blue-100 min-h-screen flex flex-col font-sans text-gray-900">
-  <main class="max-w-2xl mx-auto py-12 px-4">
+  <!-- Header -->
+  <header class="w-full bg-white/80 backdrop-blur-md shadow fixed top-0 left-0 z-30">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 md:px-8">
+      <div class="flex items-center gap-2">
+        <svg width="40" height="40" viewBox="0 0 64 64" fill="none" class="rounded-xl shadow bg-white border border-gray-200">
+          <rect width="64" height="64" rx="16" fill="#F7F7FA"/>
+          <rect x="14" y="32" width="36" height="18" rx="6" fill="#FFD966" stroke="#F4B400" stroke-width="2"/>
+          <circle cx="24" cy="42" r="2.5" fill="#F4B400"/>
+          <circle cx="34" cy="44" r="2" fill="#F4B400"/>
+          <circle cx="44" cy="38" r="1.5" fill="#F4B400"/>
+          <ellipse cx="32" cy="28" rx="8" ry="7" fill="#B0BEC5"/>
+          <ellipse cx="24" cy="22" rx="3" ry="4" fill="#B0BEC5"/>
+          <ellipse cx="40" cy="22" rx="3" ry="4" fill="#B0BEC5"/>
+          <ellipse cx="32" cy="33" rx="1.2" ry="0.8" fill="#263238"/>
+        </svg>
+        <span class="font-bold text-xl text-blue-700 tracking-tight">CheeseChompers3D</span>
+      </div>
+      <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+        <a href="blog.html" class="hover:text-blue-600 transition">Blog</a>
+        <a href="how-to-play.html" class="hover:text-blue-600 transition">How to Play</a>
+        <a href="#" class="text-blue-600 font-bold">Privacy</a>
+      </nav>
+      <a href="index.html#play" class="ml-4 px-4 py-2 rounded-xl bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition text-sm">Play Now</a>
+    </div>
+  </header>
+
+  <main class="max-w-2xl mx-auto pt-32 pb-16 px-4">
     <h1 class="text-3xl font-bold mb-6">Privacy Policy</h1>
     <p class="mb-4">Your privacy is important to us. This policy explains what information we collect and how we use it when you use CheeseChompers3D.</p>
     <h2 class="text-xl font-semibold mt-6 mb-2">Information We Collect</h2>
@@ -33,7 +60,13 @@
     <h2 class="text-xl font-semibold mt-6 mb-2">Contact Us</h2>
     <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:tangjei@gmail.com" class="text-blue-600 underline">tangjei@gmail.com</a>.</p>
     <p class="text-gray-500 mt-8 text-sm">Last updated: 2025-04-29</p>
-    <a href="index.html" class="inline-block mt-6 text-blue-600 hover:underline">&larr; Back to Home</a>
   </main>
+
+  <footer class="w-full text-center text-gray-500 text-sm py-6 mt-auto">
+    &copy; 2025 CheeseChompers3D. All rights reserved. |
+    <a href="index.html" class="text-blue-600 hover:underline">Home</a> |
+    <a href="blog.html" class="text-blue-600 hover:underline">Blog</a> |
+    <a href="how-to-play.html" class="text-blue-600 hover:underline">How to Play</a>
+  </footer>
 </body>
 </html>
