@@ -8,11 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-gray-100 via-white to-blue-100 min-h-screen flex flex-col font-sans text-gray-900">
-  <!-- Header -->
-  <header class="w-full bg-white/80 backdrop-blur-md shadow fixed top-0 left-0 z-30">
-    <div class="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 md:px-8">
-      <div class="flex items-center gap-2">
-        <svg width="40" height="40" viewBox="0 0 64 64" fill="none" class="rounded-xl shadow bg-white border border-gray-200">
+  <!-- Header - Apple Style -->
+  <header class="w-full bg-white/90 backdrop-blur-xl fixed top-0 left-0 z-30 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center gap-3">
+        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" class="rounded-xl bg-white/80">
           <rect width="64" height="64" rx="16" fill="#F7F7FA"/>
           <rect x="14" y="32" width="36" height="18" rx="6" fill="#FFD966" stroke="#F4B400" stroke-width="2"/>
           <circle cx="24" cy="42" r="2.5" fill="#F4B400"/>
@@ -23,15 +23,17 @@
           <ellipse cx="40" cy="22" rx="3" ry="4" fill="#B0BEC5"/>
           <ellipse cx="32" cy="33" rx="1.2" ry="0.8" fill="#263238"/>
         </svg>
-        <span class="font-bold text-xl text-blue-700 tracking-tight">CheeseChompers3D</span>
+        <span class="font-medium text-lg text-gray-800 tracking-tight">CheeseChompers3D</span>
       </div>
-      <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
-        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
-        <a href="blog.html" class="hover:text-blue-600 transition">Blog</a>
-        <a href="how-to-play.html" class="hover:text-blue-600 transition">How to Play</a>
-        <a href="#" class="text-blue-600 font-bold">Privacy</a>
+      <nav class="hidden md:flex items-center">
+        <div class="flex space-x-7 text-gray-600 font-normal text-sm">
+          <a href="index.html" class="hover:text-blue-500 transition duration-200">Home</a>
+          <a href="blog.html" class="hover:text-blue-500 transition duration-200">Blog</a>
+          <a href="how-to-play.html" class="hover:text-blue-500 transition duration-200">How to Play</a>
+          <a href="#" class="text-blue-500 font-medium">Privacy</a>
+        </div>
+        <a href="index.html#play" class="ml-7 px-5 py-2 rounded-full bg-blue-500 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-600 hover:shadow-md">Play Now</a>
       </nav>
-      <a href="index.html#play" class="ml-4 px-4 py-2 rounded-xl bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition text-sm">Play Now</a>
     </div>
   </header>
 

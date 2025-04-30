@@ -9,11 +9,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-gray-100 via-white to-blue-100 min-h-screen flex flex-col font-sans text-gray-900">
-  <!-- Header -->
-  <header class="w-full bg-white/80 backdrop-blur-md shadow fixed top-0 left-0 z-30">
-    <div class="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 md:px-8">
-      <div class="flex items-center gap-2">
-        <svg width="40" height="40" viewBox="0 0 64 64" fill="none" class="rounded-xl shadow bg-white border border-gray-200">
+  <!-- Header - Apple Style -->
+  <header class="w-full bg-white/90 backdrop-blur-xl fixed top-0 left-0 z-30 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center gap-3">
+        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" class="rounded-xl bg-white/80">
           <rect width="64" height="64" rx="16" fill="#F7F7FA"/>
           <rect x="14" y="32" width="36" height="18" rx="6" fill="#FFD966" stroke="#F4B400" stroke-width="2"/>
           <circle cx="24" cy="42" r="2.5" fill="#F4B400"/>
@@ -24,98 +24,100 @@
           <ellipse cx="40" cy="22" rx="3" ry="4" fill="#B0BEC5"/>
           <ellipse cx="32" cy="33" rx="1.2" ry="0.8" fill="#263238"/>
         </svg>
-        <span class="font-bold text-xl text-blue-700 tracking-tight">CheeseChompers3D</span>
+        <span class="font-medium text-lg text-gray-800 tracking-tight">CheeseChompers3D</span>
       </div>
-      <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
-        <a href="index.html" class="hover:text-blue-600 transition">Home</a>
-        <a href="blog.html" class="hover:text-blue-600 transition">Blog</a>
-        <a href="#" class="text-blue-600 font-bold">How to Play</a>
-        <a href="privacy.html" class="hover:text-blue-600 transition">Privacy</a>
+      <nav class="hidden md:flex items-center">
+        <div class="flex space-x-7 text-gray-600 font-normal text-sm">
+          <a href="index.html" class="hover:text-blue-500 transition duration-200">Home</a>
+          <a href="blog.html" class="hover:text-blue-500 transition duration-200">Blog</a>
+          <a href="#" class="text-blue-500 font-medium">How to Play</a>
+          <a href="privacy.html" class="hover:text-blue-500 transition duration-200">Privacy</a>
+        </div>
+        <a href="index.html#play" class="ml-7 px-5 py-2 rounded-full bg-blue-500 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-600 hover:shadow-md">Play Now</a>
       </nav>
-      <a href="index.html#play" class="ml-4 px-4 py-2 rounded-xl bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition text-sm">Play Now</a>
     </div>
   </header>
 
   <main class="max-w-3xl mx-auto pt-32 pb-16 px-4">
-    <h1 class="text-4xl font-extrabold text-blue-700 mb-6 text-center">CheeseChompers3D 新手入门 & 游戏玩法详解</h1>
-    <p class="text-lg text-gray-700 mb-8 text-center">欢迎来到 CheeseChompers3D 的新手入门与玩法详解页！本页将带你全面了解游戏目标、操作方式、关卡机制、得分技巧及常见问题，助你轻松上手，畅享奶酪冒险！</p>
+    <h1 class="text-4xl font-extrabold text-blue-700 mb-6 text-center">CheeseChompers3D: Beginner's Guide & How to Play</h1>
+    <p class="text-lg text-gray-700 mb-8 text-center">Welcome to the CheeseChompers3D beginner's guide! This page will help you understand game objectives, controls, level mechanics, scoring tips, and frequently asked questions to get you started on your cheese adventure!</p>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">游戏目标</h2>
-      <p class="text-gray-700">在 CheeseChompers3D 中，你的目标是操控小鼠在3D迷宫中收集尽可能多的奶酪，避开障碍物和陷阱，挑战高分并不断解锁新关卡。</p>
+      <h2 class="text-2xl font-bold text-blue-600 mb-3">Game Objective</h2>
+      <p class="text-gray-700">In CheeseChompers3D, your goal is to control a mouse through 3D mazes, collecting as much cheese as possible while avoiding obstacles and traps. Challenge for high scores and unlock new levels as you progress.</p>
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">操作方式</h2>
+      <h2 class="text-2xl font-bold text-blue-600 mb-3">Controls</h2>
       <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>PC端：使用 <span class="font-semibold text-blue-700">方向键</span> 或 <span class="font-semibold text-blue-700">WASD</span> 控制小鼠移动</li>
-        <li>移动端：通过 <span class="font-semibold text-blue-700">触摸屏虚拟按钮</span> 或 <span class="font-semibold text-blue-700">滑动手势</span> 控制方向</li>
+        <li>PC: Use <span class="font-semibold text-blue-700">arrow keys</span> or <span class="font-semibold text-blue-700">WASD</span> to control mouse movement</li>
+        <li>Mobile: Use <span class="font-semibold text-blue-700">on-screen virtual buttons</span> or <span class="font-semibold text-blue-700">swipe gestures</span> to control direction</li>
       </ul>
-      <img src="screenshot.png" alt="游戏操作示意" class="rounded-xl shadow border border-gray-200 mx-auto w-full md:w-2/3 mb-4" loading="lazy">
-      <p class="text-gray-500 text-sm text-center">（示意图：实际操作以游戏界面为准）</p>
+      <img src="screenshot.png" alt="Game controls illustration" class="rounded-xl shadow border border-gray-200 mx-auto w-full md:w-2/3 mb-4" loading="lazy">
+      <p class="text-gray-500 text-sm text-center">(Illustration: Actual controls may vary in the game interface)</p>
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">关卡与难度</h2>
+      <h2 class="text-2xl font-bold text-blue-600 mb-3">Levels and Difficulty</h2>
       <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>游戏包含多个精心设计的3D迷宫关卡，难度逐步提升。</li>
-        <li>每个关卡有独特的布局、障碍和隐藏奶酪，等你来挑战！</li>
-        <li>部分关卡设有时间限制或特殊任务，提升游戏趣味性。</li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">道具与障碍物</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li><span class="font-semibold text-yellow-600">奶酪</span>：收集后加分，是你的主要目标！</li>
-        <li><span class="font-semibold text-green-600">加速道具</span>：临时提升移动速度，快速穿越危险区域。</li>
-        <li><span class="font-semibold text-red-600">陷阱/障碍物</span>：碰到会失分或重置位置，请小心避开。</li>
-        <li><span class="font-semibold text-purple-600">特殊道具</span>：如无敌、磁铁等，帮助你轻松收集更多奶酪。</li>
+        <li>The game features multiple carefully designed 3D maze levels with gradually increasing difficulty.</li>
+        <li>Each level has unique layouts, obstacles, and hidden cheese waiting for you to discover!</li>
+        <li>Some levels include time limits or special challenges to enhance gameplay excitement.</li>
       </ul>
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">得分与奖励机制</h2>
+      <h2 class="text-2xl font-bold text-blue-600 mb-3">Power-ups and Obstacles</h2>
       <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>收集奶酪可获得分数，连吃奖励更高。</li>
-        <li>完成关卡、达成隐藏目标可解锁新皮肤或称号。</li>
-        <li>排行榜系统鼓励玩家不断挑战自我，争夺高分。</li>
+        <li><span class="font-semibold text-yellow-600">Cheese</span>: Collect to earn points - this is your main objective!</li>
+        <li><span class="font-semibold text-green-600">Speed Boost</span>: Temporarily increases movement speed to quickly navigate dangerous areas.</li>
+        <li><span class="font-semibold text-red-600">Traps/Obstacles</span>: Contact results in point loss or position reset - avoid carefully.</li>
+        <li><span class="font-semibold text-purple-600">Special Items</span>: Such as invincibility or magnets that help you collect more cheese easily.</li>
       </ul>
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">常见问题精选</h2>
+      <h2 class="text-2xl font-bold text-blue-600 mb-3">Scoring and Rewards</h2>
+      <ul class="list-disc list-inside text-gray-700 mb-4">
+        <li>Collecting cheese earns points, with consecutive collections offering higher rewards.</li>
+        <li>Completing levels and achieving hidden objectives can unlock new skins or titles.</li>
+        <li>The leaderboard system encourages players to continuously challenge themselves for higher scores.</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold text-blue-600 mb-3">Frequently Asked Questions</h2>
       <div class="space-y-3">
         <div>
-          <h3 class="font-semibold text-lg text-gray-800">Q: 游戏支持哪些设备？</h3>
-          <p class="text-gray-600">A: 支持PC、手机、平板等主流设备，直接在浏览器打开即可畅玩。</p>
+          <h3 class="font-semibold text-lg text-gray-800">Q: Which devices support the game?</h3>
+          <p class="text-gray-600">A: PC, smartphones, tablets, and other mainstream devices - just open in your browser to play.</p>
         </div>
         <div>
-          <h3 class="font-semibold text-lg text-gray-800">Q: 游戏需要注册/下载吗？</h3>
-          <p class="text-gray-600">A: 无需注册、无需下载，打开网页即可玩。</p>
+          <h3 class="font-semibold text-lg text-gray-800">Q: Do I need to register or download anything?</h3>
+          <p class="text-gray-600">A: No registration or download required - simply open the webpage and play.</p>
         </div>
         <div>
-          <h3 class="font-semibold text-lg text-gray-800">Q: 如何保存成绩？</h3>
-          <p class="text-gray-600">A: 可截图分享成绩，后续将上线云端排行榜功能。</p>
+          <h3 class="font-semibold text-lg text-gray-800">Q: How can I save my scores?</h3>
+          <p class="text-gray-600">A: You can screenshot and share your scores. A cloud-based leaderboard feature will be available soon.</p>
         </div>
       </div>
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">新手小贴士</h2>
+      <h2 class="text-2xl font-bold text-blue-600 mb-3">Beginner Tips</h2>
       <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>优先规划路线，避开障碍，快速收集奶酪。</li>
-        <li>利用加速和特殊道具突破难关。</li>
-        <li>多尝试不同策略，提升分数和通关效率。</li>
-        <li>遇到难题可参考<a href="blog.html" class="text-blue-600 hover:underline">博客攻略</a>或联系开发者。</li>
+        <li>Prioritize route planning, avoid obstacles, and collect cheese quickly.</li>
+        <li>Use speed boosts and special items to overcome difficult sections.</li>
+        <li>Try different strategies to improve your score and level completion efficiency.</li>
+        <li>If you encounter difficulties, check our <a href="blog.html" class="text-blue-600 hover:underline">blog guides</a> or contact the developer.</li>
       </ul>
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">更多攻略与互动</h2>
+      <h2 class="text-2xl font-bold text-blue-600 mb-3">More Guides and Interaction</h2>
       <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>查看<a href="blog.html" class="text-blue-600 hover:underline">博客</a>获取更多实用攻略与开发故事。</li>
-        <li>有问题或想法？欢迎<a href="mailto:tangjei@gmail.com" class="text-blue-600 hover:underline">联系开发者</a>，或在博客评论区留言！</li>
+        <li>Visit our <a href="blog.html" class="text-blue-600 hover:underline">blog</a> for more useful guides and development stories.</li>
+        <li>Questions or ideas? Feel free to <a href="mailto:tangjei@gmail.com" class="text-blue-600 hover:underline">contact the developer</a> or leave comments on the blog!</li>
       </ul>
     </section>
   </main>

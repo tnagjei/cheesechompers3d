@@ -19,11 +19,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gradient-to-br from-gray-100 via-white to-blue-100 min-h-screen flex flex-col font-sans text-gray-900">
-  <!-- Header -->
-  <header class="w-full bg-white/80 backdrop-blur-md shadow fixed top-0 left-0 z-30">
-    <div class="max-w-6xl mx-auto flex items-center justify-between py-3 px-4 md:px-8">
-      <div class="flex items-center gap-2">
-        <svg width="40" height="40" viewBox="0 0 64 64" fill="none" class="rounded-xl shadow bg-white border border-gray-200">
+  <!-- Header - Apple Style -->
+  <header class="w-full bg-white/90 backdrop-blur-xl fixed top-0 left-0 z-30 border-b border-gray-100">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center gap-3">
+        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" class="rounded-xl bg-white/80">
           <rect width="64" height="64" rx="16" fill="#F7F7FA"/>
           <rect x="14" y="32" width="36" height="18" rx="6" fill="#FFD966" stroke="#F4B400" stroke-width="2"/>
           <circle cx="24" cy="42" r="2.5" fill="#F4B400"/>
@@ -34,31 +34,33 @@
           <ellipse cx="40" cy="22" rx="3" ry="4" fill="#B0BEC5"/>
           <ellipse cx="32" cy="33" rx="1.2" ry="0.8" fill="#263238"/>
         </svg>
-        <span class="font-bold text-xl text-blue-700 tracking-tight">CheeseChompers3D</span>
+        <span class="font-medium text-lg text-gray-800 tracking-tight">CheeseChompers3D</span>
       </div>
-      <nav class="hidden md:flex gap-8 text-gray-700 font-medium">
-        <a href="#features" class="hover:text-blue-600 transition">Features</a>
-        <a href="#how" class="hover:text-blue-600 transition">How it Works</a>
-        <a href="#benefits" class="hover:text-blue-600 transition">Benefits</a>
-        <a href="#pricing" class="hover:text-blue-600 transition">Pricing</a>
-        <a href="#testimonials" class="hover:text-blue-600 transition">Testimonials</a>
-        <a href="#faq" class="hover:text-blue-600 transition">FAQ</a>
-        <a href="#about" class="hover:text-blue-600 transition">About</a>
-        <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
-        <a href="blog.html" class="hover:text-blue-600 transition">Blog</a>
-        <a href="how-to-play.html" class="hover:text-blue-600 transition font-semibold">玩法指南</a>
+      <nav class="hidden md:flex items-center">
+        <div class="flex space-x-7 text-gray-600 font-normal text-sm">
+          <a href="#features" class="hover:text-blue-500 transition duration-200">Features</a>
+          <a href="#how" class="hover:text-blue-500 transition duration-200">How it Works</a>
+          <a href="#benefits" class="hover:text-blue-500 transition duration-200">Benefits</a>
+          <a href="#pricing" class="hover:text-blue-500 transition duration-200">Pricing</a>
+          <a href="#testimonials" class="hover:text-blue-500 transition duration-200">Testimonials</a>
+          <a href="#faq" class="hover:text-blue-500 transition duration-200">FAQ</a>
+          <a href="#about" class="hover:text-blue-500 transition duration-200">About</a>
+          <a href="#contact" class="hover:text-blue-500 transition duration-200">Contact</a>
+          <a href="blog.html" class="hover:text-blue-500 transition duration-200">Blog</a>
+          <a href="how-to-play.html" class="text-blue-500 font-medium">How to Play</a>
+        </div>
+        <a href="#play" class="ml-7 px-5 py-2 rounded-full bg-blue-500 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-600 hover:shadow-md">Play Now</a>
       </nav>
-      <a href="#play" class="ml-4 px-4 py-2 rounded-xl bg-blue-600 text-white font-semibold shadow hover:bg-blue-700 transition text-sm">Play Now</a>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="w-full pt-28 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-100 flex flex-col items-center px-4">
+  <section class="w-full pt-32 pb-16 bg-gradient-to-br from-blue-50 via-white to-blue-100 flex flex-col items-center px-4">
     <div class="max-w-3xl text-center">
       <h1 class="text-4xl md:text-6xl font-extrabold text-blue-700 mb-4">CheeseChompers3D: The Ultimate 3D Cheese Adventure</h1>
       <p class="text-xl md:text-2xl text-gray-700 mb-6">Welcome to CheeseChompers3D, the most exciting and immersive cheese-chasing game online! Dive into a world where you guide your mouse through stunning 3D mazes, collect cheese, and compete for the highest score. CheeseChompers3D is designed for players who crave adventure, fun, and endless replayability. Join thousands of players and experience the thrill of CheeseChompers3D today!</p>
       <a href="#play" class="inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-xl shadow hover:bg-blue-700 text-lg transition">Start Playing CheeseChompers3D</a>
-      <a href="how-to-play.html" class="inline-block px-8 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-xl shadow hover:bg-yellow-500 text-lg transition ml-4">玩法指南</a>
+      <a href="how-to-play.html" class="inline-block px-8 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-xl shadow hover:bg-yellow-500 text-lg transition ml-4">How to Play</a>
     </div>
     <div class="mt-10 flex flex-col md:flex-row gap-8 w-full max-w-4xl items-center justify-center">
       <img src="screenshot.png" alt="CheeseChompers3D Screenshot" class="rounded-2xl shadow-lg w-full md:w-1/2 object-cover border border-gray-200" loading="lazy">
