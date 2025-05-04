@@ -5,17 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>How to Play CheeseChompers3D - New Player Guide</title>
   <meta name="description" content="Learn how to play CheeseChompers3D with this beginner's guide: controls, objectives, tips, obstacles, and more for your ultimate cheese adventure!">
-  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963" crossorigin="anonymous"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-gray-100 via-white to-blue-100 min-h-screen flex flex-col font-sans text-gray-900">
-  <!-- Header - Apple Style -->
-  <header class="w-full bg-white/90 backdrop-blur-xl fixed top-0 left-0 z-30 border-b border-gray-100">
-    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+<body class="bg-gray-50 min-h-screen flex flex-col font-sans text-gray-800">
+
+  <!-- Header (Consistent Style) -->
+  <header class="w-full bg-white/80 backdrop-blur-md sticky top-0 left-0 z-30 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-3 px-6">
       <div class="flex items-center gap-3">
-        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" class="rounded-xl bg-white/80">
-          <rect width="64" height="64" rx="16" fill="#F7F7FA"/>
+        <a href="index.html" class="flex items-center gap-3">
+          <svg width="32" height="32" viewBox="0 0 64 64" fill="none" class="rounded-lg">
+            <rect width="64" height="64" rx="12" fill="#F0F0F5"/>
           <rect x="14" y="32" width="36" height="18" rx="6" fill="#FFD966" stroke="#F4B400" stroke-width="2"/>
           <circle cx="24" cy="42" r="2.5" fill="#F4B400"/>
           <circle cx="34" cy="44" r="2" fill="#F4B400"/>
@@ -25,107 +28,115 @@
           <ellipse cx="40" cy="22" rx="3" ry="4" fill="#B0BEC5"/>
           <ellipse cx="32" cy="33" rx="1.2" ry="0.8" fill="#263238"/>
         </svg>
-        <span class="font-medium text-lg text-gray-800 tracking-tight">CheeseChompers3D</span>
+          <span class="font-semibold text-lg text-gray-900 tracking-tight">CheeseChompers3D</span>
+        </a>
       </div>
       <nav class="hidden md:flex items-center">
-        <div class="flex space-x-7 text-gray-600 font-normal text-sm">
-          <a href="index.html" class="hover:text-blue-500 transition duration-200">Home</a>
-          <a href="blog.html" class="hover:text-blue-500 transition duration-200">Blog</a>
-          <a href="#" class="text-blue-500 font-medium">How to Play</a>
-          <a href="privacy.html" class="hover:text-blue-500 transition duration-200">Privacy</a>
+        <div class="flex space-x-6 text-gray-600 font-medium text-sm">
+          <a href="index.html" class="hover:text-blue-600 transition duration-200">Home</a>
+          <a href="blog.html" class="hover:text-blue-600 transition duration-200">Blog</a>
+          <a href="#" class="text-blue-600 font-semibold">How to Play</a>
+          <a href="privacy.html" class="hover:text-blue-600 transition duration-200">Privacy</a>
         </div>
-        <a href="index.html#play" class="ml-7 px-5 py-2 rounded-full bg-blue-500 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-600 hover:shadow-md">Play Now</a>
+        <a href="index.html#play" class="ml-6 px-5 py-2 rounded-lg bg-blue-600 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Play Now</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-3xl mx-auto pt-32 pb-16 px-4">
-    <h1 class="text-4xl font-extrabold text-blue-700 mb-6 text-center">CheeseChompers3D: Beginner's Guide & How to Play</h1>
-    <p class="text-lg text-gray-700 mb-8 text-center">Welcome to the CheeseChompers3D beginner's guide! This page will help you understand game objectives, controls, level mechanics, scoring tips, and frequently asked questions to get you started on your cheese adventure!</p>
+  <!-- Main How to Play Content -->
+  <main class="max-w-3xl mx-auto py-16 px-6 w-full flex-grow">
+    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-8">
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">How to Play CheeseChompers3D</h1>
+      <p class="text-lg text-gray-600 mb-10 text-center">Your beginner's guide to controls, objectives, tips, and more!</p>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">Game Objective</h2>
-      <p class="text-gray-700">In CheeseChompers3D, your goal is to control a mouse through 3D mazes, collecting as much cheese as possible while avoiding obstacles and traps. Challenge for high scores and unlock new levels as you progress.</p>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-3">Game Objective</h2>
+        <p class="text-gray-700">Your main goal is to guide the mouse through tricky 3D mazes, collecting all the delicious cheese while skillfully avoiding traps and obstacles. Aim for the highest score and unlock new, challenging levels!</p>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">Controls</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>PC: Use <span class="font-semibold text-blue-700">arrow keys</span> or <span class="font-semibold text-blue-700">WASD</span> to control mouse movement</li>
-        <li>Mobile: Use <span class="font-semibold text-blue-700">on-screen virtual buttons</span> or <span class="font-semibold text-blue-700">swipe gestures</span> to control direction</li>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-3">Controls</h2>
+        <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+            <div>
+                <h3 class="font-semibold text-lg mb-1">PC / Desktop:</h3>
+                <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>Use <span class="font-medium text-gray-900">Arrow Keys</span> (Up, Down, Left, Right)</li>
+                    <li>Or use <span class="font-medium text-gray-900">WASD Keys</span> (W-Up, S-Down, A-Left, D-Right)</li>
+                </ul>
+            </div>
+             <div>
+                <h3 class="font-semibold text-lg mb-1">Mobile / Tablet:</h3>
+                 <ul class="list-disc list-inside space-y-1 ml-4">
+                    <li>Use the <span class="font-medium text-gray-900">On-Screen Virtual Buttons</span></li>
+                    <li>Or <span class="font-medium text-gray-900">Swipe Gestures</span> on the screen</li>
       </ul>
-      <img src="screenshot.png" alt="Game controls illustration" class="rounded-xl shadow border border-gray-200 mx-auto w-full md:w-2/3 mb-4" loading="lazy">
-      <p class="text-gray-500 text-sm text-center">(Illustration: Actual controls may vary in the game interface)</p>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">Levels and Difficulty</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>The game features multiple carefully designed 3D maze levels with gradually increasing difficulty.</li>
-        <li>Each level has unique layouts, obstacles, and hidden cheese waiting for you to discover!</li>
-        <li>Some levels include time limits or special challenges to enhance gameplay excitement.</li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">Power-ups and Obstacles</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li><span class="font-semibold text-yellow-600">Cheese</span>: Collect to earn points - this is your main objective!</li>
-        <li><span class="font-semibold text-green-600">Speed Boost</span>: Temporarily increases movement speed to quickly navigate dangerous areas.</li>
-        <li><span class="font-semibold text-red-600">Traps/Obstacles</span>: Contact results in point loss or position reset - avoid carefully.</li>
-        <li><span class="font-semibold text-purple-600">Special Items</span>: Such as invincibility or magnets that help you collect more cheese easily.</li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">Scoring and Rewards</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>Collecting cheese earns points, with consecutive collections offering higher rewards.</li>
-        <li>Completing levels and achieving hidden objectives can unlock new skins or titles.</li>
-        <li>The leaderboard system encourages players to continuously challenge themselves for higher scores.</li>
-      </ul>
-    </section>
-
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">Frequently Asked Questions</h2>
-      <div class="space-y-3">
-        <div>
-          <h3 class="font-semibold text-lg text-gray-800">Q: Which devices support the game?</h3>
-          <p class="text-gray-600">A: PC, smartphones, tablets, and other mainstream devices - just open in your browser to play.</p>
+            </div>
         </div>
-        <div>
-          <h3 class="font-semibold text-lg text-gray-800">Q: Do I need to register or download anything?</h3>
-          <p class="text-gray-600">A: No registration or download required - simply open the webpage and play.</p>
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg text-gray-800">Q: How can I save my scores?</h3>
-          <p class="text-gray-600">A: You can screenshot and share your scores. A cloud-based leaderboard feature will be available soon.</p>
-        </div>
-      </div>
+         <img src="screenshot.png" alt="Game controls illustration" class="rounded-lg shadow border border-gray-200 mx-auto w-full md:w-2/3 my-6" loading="lazy">
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">Beginner Tips</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>Prioritize route planning, avoid obstacles, and collect cheese quickly.</li>
-        <li>Use speed boosts and special items to overcome difficult sections.</li>
-        <li>Try different strategies to improve your score and level completion efficiency.</li>
-        <li>If you encounter difficulties, check our <a href="blog.html" class="text-blue-600 hover:underline">blog guides</a> or contact the developer.</li>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-3">Levels and Difficulty</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Explore multiple 3D maze levels, each with unique layouts and increasing difficulty.</li>
+          <li>Discover hidden cheese and secret paths for bonus points!</li>
+          <li>Watch out for time limits or special challenges on certain levels.</li>
       </ul>
     </section>
 
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-600 mb-3">More Guides and Interaction</h2>
-      <ul class="list-disc list-inside text-gray-700 mb-4">
-        <li>Visit our <a href="blog.html" class="text-blue-600 hover:underline">blog</a> for more useful guides and development stories.</li>
-        <li>Questions or ideas? Feel free to <a href="mailto:tangjei@gmail.com" class="text-blue-600 hover:underline">contact the developer</a> or leave comments on the blog!</li>
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-3">Power-ups and Obstacles</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li><span class="font-semibold text-yellow-600">Cheese</span>: The main goal! Collect pieces to earn points.</li>
+          <li><span class="font-semibold text-green-600">Speed Boost</span>: Grants temporary super-speed.</li>
+          <li><span class="font-semibold text-red-600">Traps/Obstacles</span>: Avoid these! Contact might cost points or reset your position.</li>
+          <li><span class="font-semibold text-purple-600">Special Items</span>: Look for rare items like invincibility shields or cheese magnets.</li>
       </ul>
     </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-3">Scoring and Rewards</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Earn points for each piece of cheese collected.</li>
+          <li>Complete levels quickly and find secrets for bonus points.</li>
+          <li>Unlock cosmetic items or titles by achieving high scores (feature coming soon).</li>
+          <li>Climb the leaderboards and compete with friends (feature coming soon).</li>
+      </ul>
+    </section>
+
+      <section class="mb-8">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-3">Beginner Tips</h2>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+          <li>Plan your route before rushing in.</li>
+          <li>Learn obstacle patterns to avoid them easily.</li>
+          <li>Don't waste power-ups; save them for when you really need them.</li>
+          <li>Practice makes perfect! Replay levels to improve your skills.</li>
+          <li>Check our <a href="blog.html" class="text-blue-600 hover:underline">blog</a> for more advanced guides.</li>
+      </ul>
+    </section>
+
+       <section>
+        <h2 class="text-2xl font-semibold text-blue-700 mb-3">Questions?</h2>
+        <p class="text-gray-700">Visit our <a href="index.html#faq" class="text-blue-600 hover:underline">FAQ section</a> on the homepage, check the <a href="blog.html" class="text-blue-600 hover:underline">blog</a>, or <a href="mailto:tangjei@gmail.com" class="text-blue-600 hover:underline">contact us</a> directly!</p>
+    </section>
+    </div>
   </main>
 
-  <footer class="w-full text-center text-gray-500 text-sm py-6 mt-auto">
-    &copy; 2025 CheeseChompers3D. All rights reserved. |
-    <a href="privacy.html" class="text-blue-600 hover:underline">Privacy Policy</a>
+  <!-- Footer (Consistent Style) -->
+   <footer class="w-full bg-white py-8 border-t border-gray-200 mt-auto">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+       <div class="text-center md:text-left text-sm text-gray-600">
+        <span class="font-semibold text-gray-700">Contact:</span>
+        <a href="mailto:tangjei@gmail.com" class="text-blue-600 hover:underline ml-1">tangjei@gmail.com</a>
+      </div>
+      <div class="text-center text-gray-500 text-xs">
+         <a href="privacy.html" class="hover:text-blue-600 underline mr-3">Privacy Policy</a> |
+         <a href="index.html" class="hover:text-blue-600 underline mx-3">Home</a> |
+         <a href="blog.html" class="hover:text-blue-600 underline ml-3">Blog</a>
+         <span class="ml-3">&copy; 2025 CheeseChompers3D. All rights reserved. Site by <span class="font-semibold">tangjei</span>.</span>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>

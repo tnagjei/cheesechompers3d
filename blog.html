@@ -12,27 +12,88 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
    crossorigin="anonymous"></script>
 </head>
-<body class="bg-gradient-to-br from-gray-100 via-white to-blue-100 min-h-screen flex flex-col font-sans text-gray-900">
-  <main class="max-w-3xl mx-auto py-12 px-4">
-    <h1 class="text-3xl font-bold mb-8">Blog</h1>
-    <article class="mb-8">
-      <h2 class="text-xl font-semibold mb-2"><a href="blog/post-1.html" class="text-blue-600 hover:underline">Welcome to CheeseChompers3D Blog!</a></h2>
-      <p class="text-gray-600 mb-2 text-sm">2025-04-29</p>
-      <p class="mb-2">Discover the latest updates, tips, and stories from the world of CheeseChompers3D. Stay tuned for game updates, player stories, and more!</p>
-      <a href="blog/post-1.html" class="text-blue-600 hover:underline">Read more</a>
+<body class="bg-gray-50 min-h-screen flex flex-col font-sans text-gray-800">
+
+  <!-- Header (Consistent with index.html) -->
+  <header class="w-full bg-white/80 backdrop-blur-md sticky top-0 left-0 z-30 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-3 px-6">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="flex items-center gap-3"> <!-- Link wrapper -->
+          <svg width="32" height="32" viewBox="0 0 64 64" fill="none" class="rounded-lg">
+            <rect width="64" height="64" rx="12" fill="#F0F0F5"/>
+            <rect x="14" y="32" width="36" height="18" rx="6" fill="#FFD966" stroke="#F4B400" stroke-width="2"/>
+            <circle cx="24" cy="42" r="2.5" fill="#F4B400"/>
+            <circle cx="34" cy="44" r="2" fill="#F4B400"/>
+            <circle cx="44" cy="38" r="1.5" fill="#F4B400"/>
+            <ellipse cx="32" cy="28" rx="8" ry="7" fill="#B0BEC5"/>
+            <ellipse cx="24" cy="22" rx="3" ry="4" fill="#B0BEC5"/>
+            <ellipse cx="40" cy="22" rx="3" ry="4" fill="#B0BEC5"/>
+            <ellipse cx="32" cy="33" rx="1.2" ry="0.8" fill="#263238"/>
+          </svg>
+          <span class="font-semibold text-lg text-gray-900 tracking-tight">CheeseChompers3D</span>
+        </a>
+      </div>
+      <nav class="hidden md:flex items-center">
+        <div class="flex space-x-6 text-gray-600 font-medium text-sm">
+          <a href="../index.html" class="hover:text-blue-600 transition duration-200">Home</a>
+          <a href="#" class="text-blue-600 font-semibold">Blog</a> <!-- Current page highlighted -->
+          <a href="../how-to-play.html" class="hover:text-blue-600 transition duration-200">How to Play</a>
+          <a href="../privacy.html" class="hover:text-blue-600 transition duration-200">Privacy</a>
+        </div>
+        <a href="../index.html#play" class="ml-6 px-5 py-2 rounded-lg bg-blue-600 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Play Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Blog Content -->
+  <main class="max-w-3xl mx-auto py-16 px-6 w-full flex-grow"> <!-- Adjusted padding/width -->
+    <h1 class="text-4xl font-bold text-gray-900 mb-10 text-center">Blog</h1> <!-- Centered title -->
+    <div class="space-y-12"> <!-- Increased spacing between posts -->
+      <!-- Blog Post 1 -->
+      <article class="bg-white rounded-xl shadow-sm border border-gray-100 p-6"> <!-- Styled article container -->
+        <p class="text-gray-500 mb-2 text-xs font-medium uppercase tracking-wider">2025-04-29</p>
+        <h2 class="text-2xl font-semibold mb-3 text-gray-900">
+          <a href="blog/post-1.html" class="hover:text-blue-600 transition duration-200">Welcome to the CheeseChompers3D Blog!</a>
+        </h2>
+        <p class="text-gray-600 mb-4 text-sm">Discover the latest updates, tips, and stories from the world of CheeseChompers3D. Stay tuned for game updates, player stories, and more!</p>
+        <a href="blog/post-1.html" class="text-blue-600 font-semibold hover:underline text-sm">Read More &rarr;</a>
     </article>
-    <article class="mb-8">
-      <h2 class="text-xl font-semibold mb-2"><a href="blog/post-2.html" class="text-blue-600 hover:underline">Top 5 Tips for CheeseChompers3D Beginners</a></h2>
-      <p class="text-gray-600 mb-2 text-sm">2025-04-29</p>
-      <p class="mb-2">New to the game? Learn essential tips to help you master CheeseChompers3D and maximize your cheese collection!</p>
-      <a href="blog/post-2.html" class="text-blue-600 hover:underline">Read more</a>
+
+      <!-- Blog Post 2 -->
+      <article class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+        <p class="text-gray-500 mb-2 text-xs font-medium uppercase tracking-wider">2025-04-29</p>
+        <h2 class="text-2xl font-semibold mb-3 text-gray-900">
+          <a href="blog/post-2.html" class="hover:text-blue-600 transition duration-200">Top 5 Tips for Beginners</a>
+        </h2>
+        <p class="text-gray-600 mb-4 text-sm">New to the game? Learn essential tips to help you master CheeseChompers3D and maximize your cheese collection!</p>
+        <a href="blog/post-2.html" class="text-blue-600 font-semibold hover:underline text-sm">Read More &rarr;</a>
     </article>
-    <article class="mb-8">
-      <h2 class="text-xl font-semibold mb-2"><a href="blog/post-3.html" class="text-blue-600 hover:underline">Behind the Scenes: How We Built CheeseChompers3D</a></h2>
-      <p class="text-gray-600 mb-2 text-sm">2025-04-29</p>
-      <p class="mb-2">Go behind the scenes and discover the story, challenges, and technology behind CheeseChompers3D's creation.</p>
-      <a href="blog/post-3.html" class="text-blue-600 hover:underline">Read more</a>
+
+      <!-- Blog Post 3 -->
+      <article class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+        <p class="text-gray-500 mb-2 text-xs font-medium uppercase tracking-wider">2025-04-29</p>
+        <h2 class="text-2xl font-semibold mb-3 text-gray-900">
+          <a href="blog/post-3.html" class="hover:text-blue-600 transition duration-200">Behind the Scenes: How We Built It</a>
+        </h2>
+        <p class="text-gray-600 mb-4 text-sm">Go behind the scenes and discover the story, challenges, and technology behind CheeseChompers3D's creation.</p>
+        <a href="blog/post-3.html" class="text-blue-600 font-semibold hover:underline text-sm">Read More &rarr;</a>
     </article>
+    </div>
   </main>
+
+  <!-- Footer (Consistent with index.html) -->
+  <footer class="w-full bg-white py-8 border-t border-gray-200 mt-auto">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+       <div class="text-center md:text-left text-sm text-gray-600">
+        <span class="font-semibold text-gray-700">Contact:</span>
+        <a href="mailto:tangjei@gmail.com" class="text-blue-600 hover:underline ml-1">tangjei@gmail.com</a>
+      </div>
+      <div class="text-center text-gray-500 text-xs">
+        <a href="../privacy.html" class="hover:text-blue-600 underline mr-3">Privacy Policy</a>
+         &copy; 2025 CheeseChompers3D. All rights reserved. Site by <span class="font-semibold">tangjei</span>.
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

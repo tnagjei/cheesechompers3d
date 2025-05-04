@@ -12,13 +12,15 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3083296102953963"
    crossorigin="anonymous"></script>
 </head>
-<body class="bg-gradient-to-br from-gray-100 via-white to-blue-100 min-h-screen flex flex-col font-sans text-gray-900">
-  <!-- Header - Apple Style -->
-  <header class="w-full bg-white/90 backdrop-blur-xl fixed top-0 left-0 z-30 border-b border-gray-100">
-    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+<body class="bg-gray-50 min-h-screen flex flex-col font-sans text-gray-800">
+
+  <!-- Header (Consistent Style) -->
+  <header class="w-full bg-white/80 backdrop-blur-md sticky top-0 left-0 z-30 border-b border-gray-200">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-3 px-6">
       <div class="flex items-center gap-3">
-        <svg width="32" height="32" viewBox="0 0 64 64" fill="none" class="rounded-xl bg-white/80">
-          <rect width="64" height="64" rx="16" fill="#F7F7FA"/>
+        <a href="index.html" class="flex items-center gap-3">
+          <svg width="32" height="32" viewBox="0 0 64 64" fill="none" class="rounded-lg">
+            <rect width="64" height="64" rx="12" fill="#F0F0F5"/>
           <rect x="14" y="32" width="36" height="18" rx="6" fill="#FFD966" stroke="#F4B400" stroke-width="2"/>
           <circle cx="24" cy="42" r="2.5" fill="#F4B400"/>
           <circle cx="34" cy="44" r="2" fill="#F4B400"/>
@@ -28,52 +30,78 @@
           <ellipse cx="40" cy="22" rx="3" ry="4" fill="#B0BEC5"/>
           <ellipse cx="32" cy="33" rx="1.2" ry="0.8" fill="#263238"/>
         </svg>
-        <span class="font-medium text-lg text-gray-800 tracking-tight">CheeseChompers3D</span>
+          <span class="font-semibold text-lg text-gray-900 tracking-tight">CheeseChompers3D</span>
+        </a>
       </div>
       <nav class="hidden md:flex items-center">
-        <div class="flex space-x-7 text-gray-600 font-normal text-sm">
-          <a href="index.html" class="hover:text-blue-500 transition duration-200">Home</a>
-          <a href="blog.html" class="hover:text-blue-500 transition duration-200">Blog</a>
-          <a href="how-to-play.html" class="hover:text-blue-500 transition duration-200">How to Play</a>
-          <a href="#" class="text-blue-500 font-medium">Privacy</a>
+        <div class="flex space-x-6 text-gray-600 font-medium text-sm">
+          <a href="index.html" class="hover:text-blue-600 transition duration-200">Home</a>
+          <a href="blog.html" class="hover:text-blue-600 transition duration-200">Blog</a>
+          <a href="how-to-play.html" class="hover:text-blue-600 transition duration-200">How to Play</a>
+          <a href="#" class="text-blue-600 font-semibold">Privacy</a>
         </div>
-        <a href="index.html#play" class="ml-7 px-5 py-2 rounded-full bg-blue-500 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-600 hover:shadow-md">Play Now</a>
+        <a href="index.html#play" class="ml-6 px-5 py-2 rounded-lg bg-blue-600 text-white font-medium text-sm transition-all duration-300 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">Play Now</a>
       </nav>
     </div>
   </header>
 
-  <main class="max-w-2xl mx-auto pt-32 pb-16 px-4">
-    <h1 class="text-3xl font-bold mb-6">Privacy Policy</h1>
-    <p class="mb-4">Your privacy is important to us. This policy explains what information we collect and how we use it when you use CheeseChompers3D.</p>
-    <h2 class="text-xl font-semibold mt-6 mb-2">Information We Collect</h2>
-    <ul class="list-disc list-inside mb-4">
-      <li><b>Usage Data:</b> We collect anonymous usage data through analytics tools to help us improve the website and game experience.</li>
-      <li><b>Cookies:</b> We may use cookies to remember your preferences and enhance your browsing experience.</li>
-      <li><b>Contact Information:</b> If you contact us via email, we will receive your email address and any information you provide.</li>
+  <!-- Main Privacy Content -->
+  <main class="max-w-2xl mx-auto py-16 px-6 w-full flex-grow bg-white rounded-lg shadow-sm border border-gray-100 my-8">
+    <h1 class="text-3xl font-bold text-gray-900 mb-6">Privacy Policy</h1>
+    <p class="text-gray-500 text-sm mb-6">Last updated: April 29, 2025</p>
+
+    <div class="prose prose-sm sm:prose lg:prose-lg max-w-none text-gray-700 space-y-4">
+      <p>Your privacy is important to us. This policy explains what information we collect and how we use it when you play CheeseChompers3D.</p>
+
+      <h2>Information We Collect</h2>
+      <ul>
+        <li><b>Usage Data:</b> We collect anonymous usage data through analytics tools (like Google Analytics) to help us understand player behavior and improve the game experience. This may include session duration, levels played, and general interaction patterns.</li>
+        <li><b>Cookies:</b> We may use essential cookies for website functionality. Third-party services like Google AdSense may also use cookies for ad personalization and measurement.</li>
+        <li><b>Contact Information:</b> If you contact us via email, we will receive your email address and any information you voluntarily provide in your message.</li>
+      </ul>
+
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>To operate and maintain the game and website.</li>
+        <li>To improve website and game functionality based on anonymous usage trends.</li>
+        <li>To respond to user inquiries and provide support when contacted directly.</li>
+        <li>To display advertisements via Google AdSense, which helps keep the game free.</li>
     </ul>
-    <h2 class="text-xl font-semibold mt-6 mb-2">How We Use Information</h2>
-    <ul class="list-disc list-inside mb-4">
-      <li>To improve website and game functionality</li>
-      <li>To communicate with users who contact us</li>
-      <li>To analyze usage trends and optimize user experience</li>
+
+      <h2>Third-Party Services</h2>
+      <p>We use third-party services like Google Analytics and Google AdSense. These services have their own privacy policies addressing how they collect and use data. We recommend reviewing their policies for more information.</p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Ad Technology</a></li>
     </ul>
-    <h2 class="text-xl font-semibold mt-6 mb-2">Third-Party Services</h2>
-    <p class="mb-4">We may use third-party analytics and advertising services (such as Google Analytics) that collect, monitor, and analyze information to improve our service. These third parties have their own privacy policies addressing how they use such information.</p>
-    <h2 class="text-xl font-semibold mt-6 mb-2">Your Choices</h2>
-    <ul class="list-disc list-inside mb-4">
-      <li>You can disable cookies in your browser settings.</li>
-      <li>You may contact us to request deletion of your information shared via email.</li>
+
+      <h2>Your Choices</h2>
+      <ul>
+        <li>You can manage or disable cookies through your browser settings. Note that disabling essential cookies might affect website functionality.</li>
+        <li>You can opt-out of personalized advertising from Google <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">here</a>.</li>
+        <li>You may contact us to request deletion of any personal information (like email correspondence) we hold about you.</li>
     </ul>
-    <h2 class="text-xl font-semibold mt-6 mb-2">Contact Us</h2>
-    <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:tangjei@gmail.com" class="text-blue-600 underline">tangjei@gmail.com</a>.</p>
-    <p class="text-gray-500 mt-8 text-sm">Last updated: 2025-04-29</p>
+
+      <h2>Contact Us</h2>
+      <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:tangjei@gmail.com">tangjei@gmail.com</a>.</p>
+    </div>
   </main>
 
-  <footer class="w-full text-center text-gray-500 text-sm py-6 mt-auto">
-    &copy; 2025 CheeseChompers3D. All rights reserved. |
-    <a href="index.html" class="text-blue-600 hover:underline">Home</a> |
-    <a href="blog.html" class="text-blue-600 hover:underline">Blog</a> |
-    <a href="how-to-play.html" class="text-blue-600 hover:underline">How to Play</a>
+  <!-- Footer (Consistent Style) -->
+   <footer class="w-full bg-white py-8 border-t border-gray-200 mt-auto">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+       <div class="text-center md:text-left text-sm text-gray-600">
+        <span class="font-semibold text-gray-700">Contact:</span>
+        <a href="mailto:tangjei@gmail.com" class="text-blue-600 hover:underline ml-1">tangjei@gmail.com</a>
+      </div>
+      <div class="text-center text-gray-500 text-xs">
+         <a href="privacy.html" class="text-blue-600 hover:underline mr-3">Privacy Policy</a> |
+         <a href="index.html" class="hover:text-blue-600 underline mx-3">Home</a> |
+         <a href="blog.html" class="hover:text-blue-600 underline ml-3">Blog</a>
+         <span class="ml-3">&copy; 2025 CheeseChompers3D. All rights reserved. Site by <span class="font-semibold">tangjei</span>.</span>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
